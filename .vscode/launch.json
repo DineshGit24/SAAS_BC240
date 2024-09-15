@@ -1,0 +1,47 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "snapshotInitialize: Microsoft production cloud",
+            "type": "al",
+            "request": "snapshotInitialize",
+            "environmentType": "Production",
+            "environmentName": "India_Production",
+            "breakOnNext": "WebClient",
+            "executionContext": "DebugAndProfile"
+        },
+        
+       
+        {
+            "name": "Cloud Sandbox Debugging",
+            "type": "al",
+            "request": "attach",
+            "environmentType": "Sandbox",
+            "environmentName":  "India_Sandbox",
+            "breakOnError": "All",
+            "breakOnRecordWrite": "None",
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10,
+            "breakOnNext": "WebClient",
+            "tenant": "5595e5fa-351b-4645-97b9-f874b9e8b0b0",
+            "userId": "DINESH"
+           
+
+        },
+        {
+            "name": "Microsoft cloud sandbox",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "Sandbox",
+            "environmentName": "India_Sandbox",
+            "startupObjectId": 22,
+            "startupObjectType": "Page",
+            "breakOnError": "All",
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true
+        },
+    ]
+}
