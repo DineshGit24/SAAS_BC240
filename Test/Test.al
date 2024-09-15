@@ -13,7 +13,7 @@ pageextension 50120 test1 extends "Customer List"
     var
         myInt: Integer;
     begin
-        Message('Hi Dinesh');
+        Message('Hi Dinesh New Brabch chages B1');
     end;
 
     var
